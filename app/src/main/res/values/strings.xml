@@ -1,0 +1,33 @@
+<resources>
+    <string name="default_ip">192.168.2.103:8000</string>
+
+    <string name="app_name">旅遊小跟班</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">裝備清單</string>
+    <string name="tab_text_2">備忘錄</string>
+    <string name="tab_text_3">購物紀錄</string>
+
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="manualControl">ManualControl</string>
+    <string name="autoControl">AutoControl</string>
+    <string name="raspi_state">樹梅派STATE</string>
+    <string name="raspi_ip">樹梅派IP</string>
+    <string name="opencamera">OpenCamera</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_subtitle">CSIE National Formosa University</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_travelnotes">TravelNotes</string>
+    <string name="menu_videostream">VideoStream</string>
+</resources>

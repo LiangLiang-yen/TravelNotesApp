@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <!-- checkMake -->
+        <RelativeLayout
+            android:id="@+id/checkMake"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3sp"
+            android:background="@drawable/rectangle">
+
+            <!-- selectedItem -->
+            <ImageView
+                android:id="@+id/selectedItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/checkmark"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <!-- itemName -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="27dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:ems="1"
+            android:text="衣服"
+            android:textAppearance="@style/notSelected"/>
+
+        <!-- itemCount -->
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="5"
+            android:textAppearance="@style/notSelected"/>
+
+        <!-- itemUnit -->
+        <TextView
+            android:id="@+id/itemUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="件"
+            android:textAppearance="@style/notSelected"/>
+    </LinearLayout>
+    <View
+        android:tint="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/linelight"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

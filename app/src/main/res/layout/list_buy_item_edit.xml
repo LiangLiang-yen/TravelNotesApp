@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+    <!-- removeMake -->
+    <ImageButton
+        android:id="@+id/removeItem"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_weight="0.5"
+        android:src="@drawable/removemark"
+        android:visibility="visible"/>
+
+    <!-- itemName -->
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:ems="3"
+        android:singleLine="true"
+        android:text="衣服"
+        android:textStyle="normal"
+        android:textAppearance="@style/notSelected"/>
+
+    <!-- itemPrize -->
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="1000"
+        android:textAppearance="@style/notSelected"
+        android:textStyle="normal" />
+
+    <!-- itemCount -->
+    <EditText
+        android:id="@+id/itemCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="1"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="5"
+        android:textAlignment="center"
+        android:textAppearance="@style/notSelected"
+        android:textStyle="normal" />
+
+    <!-- itemMoney -->
+    <TextView
+        android:id="@+id/itemMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginEnd="15dp"
+        android:text="5000"
+        android:textStyle="normal"
+        android:textColor="#7D7E7D"
+        android:ems="2"
+        android:singleLine="true"
+        android:textAppearance="@style/notSelected"/>
+
+    <ImageView
+        android:id="@+id/moveItem"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/movemark"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+</LinearLayout>

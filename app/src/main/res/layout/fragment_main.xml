@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TravelNotes.TravelNotesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weatherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="0dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewBG"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:alpha=".9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline"
+            app:srcCompat="@drawable/cloudy"/>
+
+        <TextView
+            android:id="@+id/textViewTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31.5°C/26.43°C"
+            android:textAppearance="@style/imageText"
+            app:layout_constraintEnd_toStartOf="@+id/textViewHumidity"
+            app:layout_constraintTop_toTopOf="@id/textViewHumidity"/>
+
+        <TextView
+            android:id="@+id/textViewAlerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晴朗"
+            android:textAppearance="@style/imageText"
+            app:layout_constraintBottom_toTopOf="@id/textViewDate"
+            app:layout_constraintStart_toStartOf="@id/imageViewIcon"/>
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="濕度: 30%"
+            android:textAppearance="@style/imageText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="台北市"
+            android:ems="7"
+            android:singleLine="true"
+            android:textAppearance="@style/imageTitle"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintStart_toEndOf="@id/imageViewIcon"
+            app:layout_constraintTop_toBottomOf="@id/textViewHumidity"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-12-06"
+            android:textAppearance="@style/imageBanner"
+            android:layout_marginRight="5dp"
+            app:layout_constraintEnd_toStartOf="@id/textViewLink"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewBG"/>
+
+        <!--LINK-->
+        <TextView
+            android:id="@+id/textViewLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Darksky"
+            android:textAppearance="@style/imageBanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewBG"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewHeaderText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="正在連接網路..."
+        android:textSize="30dp"
+        android:background="#A360DD9B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/weatherLayout"
+        app:layout_constraintBottom_toBottomOf="@id/weatherLayout"/>
+
+    <LinearLayout
+        android:id="@+id/fragmentView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherLayout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

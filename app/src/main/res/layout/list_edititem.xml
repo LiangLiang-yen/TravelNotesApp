@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- removeMake -->
+    <ImageButton
+        android:id="@+id/removeItem"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/removemark"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal">
+        <!-- itemName -->
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:hint="名稱"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:text="衣服"
+            android:ems="2"
+            android:maxLength="12"
+            android:maxWidth="53dp"
+            android:textAppearance="@style/notSelected" />
+
+        <!-- itemCount -->
+        <EditText
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="1"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:text="5"
+            android:textAppearance="@style/notSelected" />
+
+        <!-- itemUnit -->
+        <EditText
+            android:id="@+id/itemUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="個"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:text="件"
+            android:textAlignment="center"
+            android:textAppearance="@style/notSelected" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moveItem"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/movemark"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+</LinearLayout>

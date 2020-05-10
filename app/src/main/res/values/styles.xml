@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="VideoStreamTheme" parent="AppTheme">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="colorControlActivated">@color/green</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:colorButtonNormal">#000000</item>
+        <item name="android:colorAccent">#ffffff</item>
+    </style>
+
+    <style name="imageTextParent">
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textColor">#525252</item>
+    </style>
+
+    <style name="imageText" parent="imageTextParent">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="imageTitle" parent="imageTextParent">
+        <item name="android:textSize">30dp</item>
+    </style>
+
+    <style name="imageBanner" parent="imageTextParent">
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="imageText.White" parent="imageText">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="imageTitle.White" parent="imageTitle">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="imageBanner.White" parent="imageBanner">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="notSelected">
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

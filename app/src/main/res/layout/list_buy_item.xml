@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <!-- itemName -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:ems="1"
+            android:singleLine="true"
+            android:text="衣服"
+            android:textStyle="normal"
+            android:textAppearance="@style/notSelected"/>
+
+        <!-- itemPrize -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="1000"
+            android:textStyle="normal"
+            android:singleLine="true"
+            android:ems="1"
+            android:textAppearance="@style/notSelected"/>
+
+        <!-- itemCount -->
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="5"
+            android:singleLine="true"
+            android:ems="1"
+            android:textStyle="normal"
+            android:textAppearance="@style/notSelected"/>
+
+        <!-- itemMoney -->
+        <TextView
+            android:id="@+id/itemMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="15dp"
+            android:text="5000"
+            android:textStyle="normal"
+            android:ems="1"
+            android:singleLine="true"
+            android:textAppearance="@style/notSelected"/>
+    </LinearLayout>
+    <View
+        android:tint="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/linelight"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

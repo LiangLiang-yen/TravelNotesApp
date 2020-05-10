@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_travelnotes">
+
+    <fragment
+        android:id="@+id/nav_travelnotes"
+        android:name="com.finalproject.app.ui.TravelNotes.TravelNotesFragment"
+        android:label="@string/menu_travelnotes"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/nav_videostream"
+        android:name="com.finalproject.app.ui.VideoStream.VideoStream"
+        android:label="@string/menu_videostream"
+        tools:layout="@layout/activity_video_stream" />
+
+</navigation>
