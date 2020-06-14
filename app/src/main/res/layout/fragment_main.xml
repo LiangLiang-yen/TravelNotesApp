@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Darksky"
-            android:textAppearance="@style/imageBanner"
+            android:textAppearance="@style/imageBanner.White"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/imageViewBG"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -110,7 +110,7 @@
         android:gravity="center"
         android:text="正在連接網路..."
         android:textSize="30dp"
-        android:background="#A360DD9B"
+        android:background="#EF5350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/weatherLayout"

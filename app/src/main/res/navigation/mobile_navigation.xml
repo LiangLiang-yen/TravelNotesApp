@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/nav_travelnotes"
-        android:name="com.finalproject.app.ui.TravelNotes.TravelNotesFragment"
+        android:name="com.TravelNotes.app.ui.TravelNotes.TravelNotesFragment"
         android:label="@string/menu_travelnotes"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/nav_videostream"
-        android:name="com.finalproject.app.ui.VideoStream.VideoStream"
+        android:name="com.TravelNotes.app.ui.VideoStream.VideoStream"
         android:label="@string/menu_videostream"
         tools:layout="@layout/activity_video_stream" />
 
